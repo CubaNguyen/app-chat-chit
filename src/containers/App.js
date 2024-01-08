@@ -32,7 +32,11 @@ class App extends Component {
                     <Switch>
                         <Route path="/login" exact component={(Login)} />
                     </Switch>
-                    <div className='mainContainer' >
+
+
+                </BrowserRouter>
+
+                {/* <div className='mainContainer' >
                         <div className='frameLeftIcon'>
                             <FrameLeftIcon />
                         </div>
@@ -62,9 +66,7 @@ class App extends Component {
                         </div>
 
 
-                    </div>
-
-                </BrowserRouter>
+                    </div> */}
 
             </>
 

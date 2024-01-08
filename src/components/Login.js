@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './Login.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import * as actions from '../store/actions'
 
 
 
@@ -27,6 +28,7 @@ class Login extends Component {
     }
 
     handleSubmit = () => {
+        this.props.UserLogin(this.state.accout)
         console.log('submit ', this.state)
     }
 
@@ -95,6 +97,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        UserLogin: () => dispatch(actions.UserLogin()),
     };
 };
 

@@ -1,8 +1,8 @@
 import axios from "../axios"
 
-// const handleLoginApi = (userEmail, userPassword) => {
-//     return axios.post('/api/login', { email: userEmail, password: userPassword });
-// }
+const handleLoginApi = (userEmail, userPassword) => {
+    return axios.post('http://localhost:3000/login', { email: userEmail, password: userPassword });
+}
 
 // const getAllUsers = (inputId) => {
 //     return axios.get(`/api/get-all-users?id=${inputId}`)
@@ -102,5 +102,5 @@ import axios from "../axios"
 // }
 
 export {
-
+    handleLoginApi
 }
